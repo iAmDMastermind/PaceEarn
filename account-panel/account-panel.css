@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.head {
+    background-color: rgb(92, 92, 252);
+    padding: 5px;
+}
+
+.panel {
+    background-color: rgba(92, 92, 252, 0.959);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 120px;
+    color: whitesmoke;
+}
+
+.account-panel {
+    background-color: rgba(149, 149, 231, 0.74);
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px goldenrod;
+    text-align: center;
+}
+
+.letstart {
+    background-color: rgba(92, 92, 252, 0.363);
+    margin: 40px 0 0 0;
+    color: green;
+    text-align: center;
+    padding: 20px;
+}
+
+.letstart h1 {
+    background-color: whitesmoke;
+    text-align: center;
+    color: black;
+}
+
+.letstart button {
+    font-family: 'Franklin Gothic Medium';
+    width: 100px;
+    height: 60px;
+    padding: 10px;
+    border: 0.6px solid green;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    color: green;
+    box-shadow: 2px 2px 2px green;
+}
+
+.letstart button:hover {
+    color: whitesmoke;
+    background-color: green;
+    transition: 0.6s;
+    box-shadow: 2px 2px 2px whitesmoke;
+}
+
+/* Popup Modal */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.loading-bar {
+    background: #ccc;
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.loading-bar .progress {
+    background: green;
+    height: 100%;
+    width: 0;
+    animation: loading 2s linear forwards;
+}
+
+@keyframes loading {
+    to {
+        width: 100%;
+    }
+}
+
+#whatsapp-btn{
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

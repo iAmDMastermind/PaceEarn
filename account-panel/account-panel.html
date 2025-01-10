@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/PACE EARN.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./account-panel.css">
+    <title>PaceEarn: Account Balance</title>
+</head>
+
+<body>
+    <div class="head">
+        <a href="/index.html"><img src="/src/PACE EARN.png" alt="PaceEarn Logo" height="60px"></a>
+        <a href="/index.html"><button class="statement-btn" style="position: absolute; top: 15px;">Back</button></a>
+    </div>
+
+    <div class="panel">
+        <div class="account-panel">
+            <p id="user-greeting">Hello, Michael 👋🏽</p>
+            <h5 id="user-age">Phone Number: Not Set</h5>
+        </div>
+
+        <div class="account-panel">
+            <p id="total-assets">Total Assets: $6.01 (Bonus🎄🎅🏽)</p>
+            <button class="statement-btn">Withdraw Funds</button>
+        </div>
+    </div>
+
+    <div class="letstart">
+        <h1>Let's Start</h1>
+        <h2>Send WhatsApp link gain $2.70</h2>
+        <button id="send-link-btn">Send Link to 1 Person</button>
+    </div>
+
+    <script>
+        // Fetch user data from localStorage
+        const userFirstName = localStorage.getItem("userFirstName");
+        const userPhoneNumber = localStorage.getItem("userPhoneNumber");
+
+        // Update account panel with user data
+        if (userFirstName) {
+            document.getElementById("user-greeting").textContent = `Hello, ${userFirstName} 👋🏽`;
+        }
+        if (userPhoneNumber) {
+            document.getElementById("user-age").textContent = `Phone Number: ${userPhoneNumber}`;
+        }
+    </script>
+</body>
+
+</html>
