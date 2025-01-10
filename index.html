@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/PACE EARN.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>PaceEarn: Earn money from the comfort of your home</title>
+</head>
+
+<body>
+    <nav>
+        <nav class="christmas">Merry Christmas 🎅🏻🎄❄</nav>
+        <a href="./i.html"><h2>PACE EARN</h2></a>
+        <ul class="btn">
+            <li><button onclick="showForm()" id="loginBtn">Log In</button></li>
+            <li><button id="signupBtn">Sign Up</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="statement">
+            <h1>Light on cash? 😥 Don’t Worry 😎.</h1>
+            <h2>Make <span class="i">real</span> cash from the comforts of your home 💶📱.</h2>
+            <a href="./account-panel/account-panel.html"><button class="statement-btn">Sign Up</button></a>
+        </div>
+
+        <div class="works">
+            <h1>How it works?</h1>
+            <ul class="works-list">
+                <li>Register/Sign Up</li>
+                <a href="./account-panel/account-panel.html"><button class="statement-btn">Sign Up</button></a>
+                <li>Connect Wallet</li>
+                <li>Perform Tasks</li>
+                <li>Earn Cash 🤑</li>
+            </ul>
+            <h6>Note: PaceEarn will receive 10% of your earnings</h6>
+        </div>
+
+        <div class="container">
+            <div class="earnings-section">
+                <h1>Estimated Earnings</h1>
+    
+                <div class="estimated-earnings">
+                    <p><strong>Estimated Earnings for Today:</strong></p>
+                    <p id="earnings-amount">$0.00</p>
+                </div>
+    
+                <div class="earnings-options">
+                    <label for="earnings-select">Select an Earning Option:</label>
+                    <select id="earnings-select" class="earnings-select">
+                        <option value="0">-- Choose an Option --</option>
+                        <option value="1">Share a Link on WhatsApp ($3)</option>
+                        <option value="2">Download App ($7)</option>
+                        <option value="3">Watch an Ad ($6.50)</option>
+                    </select>
+                </div>
+    
+                <button id="update-earnings-btn" class="update-btn">Update Earnings</button>
+            </div>
+        </div>
+
+        <div class="bonus">
+            <h1>Get <span class="i">FREE!</span> $6 bonus when you join from 25th Nov. <span class="i">24'</span> to 3rd
+                Jan. <span class="i">25'</span> 🎅🏽🎄</h1>
+            <a href="./account-panel/account-panel.html"><button class="statement-btn">Join to receive</button></a>
+        </div>
+    </main>
+
+    <div class="form-container">
+        <form id="userForm" class="solar-form">
+            <h1>User Information</h1>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" min="1" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="\d{11}" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" placeholder="Enter your country" required>
+
+            <label for="accountNumber">Account Number:</label>
+            <input type="text" id="accountNumber" name="accountNumber" placeholder="Enter your 11-digit account number" pattern="\d{11}" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
